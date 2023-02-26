@@ -1,0 +1,22 @@
+<tr class='product'>
+        <td><%= product.title %></td>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        <td><%= image_tag product.photo, width: 200  if product.photo.attached? %></td>
+        <td>
+            <%= link_to 'Show detail', product_path(product.id) %>
+        </td>   
+
+        <td>
+            <%= link_to 'Editar', edit_product_path(product.id) %>
+        </td>       
+        <td>
+            <!-- para hacer la llamada de tipo delete lo haremos con el framework 
+            llamado turbo desarrollado por el equipo de rails -->
+            <%= link_to 'Eliminar', product_path(product.id), data:{
+                turbo_method: :delete, 
+                turbo_confirm: t('common.confirm')
+            } %>
+        </td>
+      
+    </tr>

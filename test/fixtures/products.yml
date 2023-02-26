@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: NINTENDO 4
+  description: Nuevo de paquete
+  price: 150
+
+two:
+  title: NINTENDO SWITCH
+  description: Poco USO
+  price: 100

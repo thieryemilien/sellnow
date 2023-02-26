@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sellnow</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <!-- si quieres compartir una informacion en todas las paginas la puede colocar aqui 
+    por ejemplo
+    informacion de header o el footer en todas las paginas
+    -->
+    
+    <!-- Sustituye el contenido de cada pagina por "yield" -->
+    <%= render 'shared/flash_message' %> 
+    <% #flash.inspect %>
+    <%= render 'shared/header' %> 
+
+    <%= yield %>
+  </body>
+</html>

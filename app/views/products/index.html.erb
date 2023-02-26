@@ -1,0 +1,45 @@
+<h1>Productos</h1>
+
+<% #@products.count %>
+<table>
+    <tr>
+        <th><%= t('.title') %></th>
+        <th><%= t('.description') %></th>
+        <th><%= t('.price') %></th>
+        <th><%= t('.photo') %></th>
+        <th  colspan="3"><%= t('.action') %></th>
+        <!--
+        <th>description</th>
+        <th>price</th>
+        <th>photo</th>
+        <th colspan="3">action</th>
+        -->
+    </tr>
+
+<%= render partial: 'product',  collection: @products %>
+
+<% #@products.each do |product| %>
+    <!--
+     <tr class='product'>
+        <td>< %= product.title %></td>
+        <td>< %= product.description %></td>
+        <td>< %= product.price %></td>
+        <td>< %= image_tag product.photo, width: 200  if product.photo.attached? %></td>
+        <td>
+            < %= link_to 'Show detail', product_path(product.id) %>
+        </td>   
+
+        <td>
+            < %= link_to 'Editar', edit_product_path(product.id) %>
+        </td>       
+        <td>
+            <! -- para hacer la llamada de tipo delete lo haremos con el framework 
+            llamado turbo desarrollado por el equipo de rails -- >
+            < %= link_to 'Eliminar', product_path(product.id), data:{
+                turbo_method: :delete, turbo_confirm: '¿Are sure to delele this product?'
+            } %>
+        </td>
+      
+    </tr>
+    -->
+<% #end %>

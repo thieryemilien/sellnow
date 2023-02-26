@@ -1,0 +1,50 @@
+en:
+  activerecord:
+    models:
+      product: Producto
+    attributes:
+      product:
+        title: 'Título'
+        description: 'Descripción'
+        price: 'Precio'
+        photo: 'Foto'
+  common:
+    confirm: '¿Are you sure to delele this row?' 
+    back: 'Go back'
+  products:
+    index:
+      title: 'producto'
+      description: 'descripción'
+      price: 'precio'
+      photo: 'foto'
+      action: 'acción'
+    new:
+      title: 'Nuevo producto'
+      description: 'descripción'
+      price: 'precio'
+      photo: 'foto'
+    created:
+      msg_created: 'Creado exitosamente... Successfully created...'   
+    edit:
+      title: 'Editar producto'
+      description: 'descripción'
+      price: 'precio'
+      photo: 'foto'
+    update:
+      msg_updated: 'Actualizado exitosamente... Successfully updated...'   
+    destroy:
+      msg_deleted: 'Eliminado exitosamente... Successfully deleted...'     
+    show:
+      title: 'producto'
+      description: 'descripción'
+      price: 'precio'
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+    edit:
+      title: 'Edit category'
+    new:
+      title: 'New category'  
